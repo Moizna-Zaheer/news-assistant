@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            background-image: url(https://www.personalrobots.biz/wp-content/uploads/2019/11/Alita-Battle-Angel.jpg);
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1{
+            color: #fff;
+        }
+
+        #search-container {
+            margin-top: 300px;
+        }
+
+        #search-input {
+            padding: 10px;
+            width: 200px;
+        }
+
+        #search-button {
+            padding: 10px;
+            cursor: pointer;
+            background-color: #4285f4;
+            color: #fff;
+            border: none;
+        }
+
+        #hidden-block {
+            display: none;
+            margin-top: 20px;
+        }
+
+        video {
+            width: 100%;
+            max-width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <div id="search-container">
+        <h1>AI NEWS</h1>
+        <input type="text" id="search-input" placeholder="Enter AI news topic">
+        <button id="search-button" onclick="showVideo()">Search</button>
+    </div>
+
+    <div id="hidden-block">
+        <video controls>
+            <source src="your-video-file.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <script>
+        function showVideo() {
+            // Function to show the hidden block with the video
+            document.getElementById('hidden-block').style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
+<!-- Remember to replace "your-video-file.mp4" with the actual path to your video file.  -->
